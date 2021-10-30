@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Task Annotation</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+        div.form-control {
+         display: inline;
+                 }
+         </style>
+    </head>
+    <body>
+        
+        <h1>Mobile Task Annotation</h1>
+        <h2>1. Data</h2>
+        <h3>UbiqLog (smartphone lifelogging) Data Set</h3><a href="https://archive.ics.uci.edu/ml/datasets/UbiqLog+(smartphone+lifelogging)#">https://archive.ics.uci.edu/ml/datasets/UbiqLog+(smartphone+lifelogging)#</a>
+        
+        <!--
+            MADE WITH <3 AND JAVASCRIPT
+        -->
+        
+        <p>
+        To acquire a ground-truth of mobile task labels, we conduct a mobile task annotation crowd-sourcing study. We sample the app usage logs for such annotation from the publicly available UbiqLog dataset [1,2], where participants were required to install the lifelogging app UbiqLog ontheir phones from November 2013 to January 2014. We select 20 users randomly, for which five-day of app usage logs are collected,including anonymized user ID, app package ID and corresponding timestamps.
+        </p>
+    
+        
+        <!--
+        <p>Refrences</p>
+        <p>[1]<em>Rawassizadeh, R., Tomitsch, M., Wac, K., & Tjoa, A. M. (2013). UbiqLog: a generic mobile phone-based life-log framework. Personal and ubiquitous computing, 17(4), 621-637. </em></p>
+        
+        <p>[2]<em>Rawassizadeh, R., Momeni, E., Dobbins, C., Mirza-Babaei, P., & Rahnamoun, R. (2015). Lesson Learned from Collecting Quantified Self Information via Mobile and Wearable Devices. Journal of Sensor and Actuator Networks, 4(4), 315-335.</em></p>
+         -->
+        
+        <samp>
+        </samp>
+        
+        
+        <h2>2. Annotation Procedure</h2>
+        <p>To identify mobile tasks, we recruited three annotators from Amazon Mechanical Turk (<a href="https://www.mturk.com/">https://www.mturk.com/</a>), which is a crowdsourcing website for businesses (known as Requesters) to hire remotely located "crowd workers" for performing discrete on-demand tasks that computers are currently unable to do.</p>
+        
+        <p>The annotation page presented to the assessors is as the screenshot below, including the app usage information such as timestamp, app icon, and app name. To provide relevant information to the assessors, we provided the URLs directed to the corresponding app info on Google Play, where the assessor could browse the detailed description of app functionalities, content and user comments of this app. Each assessor was asked to select a Task ID number from the drop-down menu to label an app usage, and each app usage log belonged to the same task was labeled with the unique sametask ID as shown in the screenshot. The annotators were also asked to optionally write a short description for each task.</p>
+        
+        <p>A detailed guideline was presented to the assessors from the link <a href = "full_instructions.html">View full instructions</a> on the left side, describing in general what a mobile task is and showing several examples demonstrating what constitutes a mobile task.</p>
+        
+        
+        <img src="screenshots/facebook_example_red.jpg" style="width:650px;height:472px;" class="center">
+        
+        
+        
+        
+        
+        <!--
+            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
+        -->
+        
+        
+                
+                
+<h2>3. Annotation Results</h2>    
+        
+<p>After aggregating the assessors’ annotations, we ultimately obtain a collection of 1414 tasks annotated out of 20 users’ app usage logs.The basic statistics of those annotated tasks are shown in the Table below.</p>
+        
+<table >
+  <tr>
+    <th># Users</th>
+    <th># Logs</th>
+     <th># Apps</th>
+</tr>      
+    <tr>
+    <td style="text-align:center">20</td>
+    <td style="text-align:center">3558</td>
+     <td style="text-align:center">184</td>
+    </tr>
+  <tr>    
+    <th># Tasks</th>
+      <th># Single-log Task</th>
+      <th># Multi-log Task</th>
+  </tr>
+  <tr>
+    <td style="text-align:center">1414</td>
+    <td style="text-align:center">717 (50.7%)</td>
+      <td style="text-align:center">697 (49.3%)</td>
+  </tr>
+</table>
+        
+        
+
+        <h3>Citation Request</h3>
+        <p>Please cite the following papers without removing any one of them:</p>
+        
+       
+        
+       <p>Yuan Tian, Ke Zhou, Mounia Lalmas, Dan Pelleg. "Identifying Tasks from Mobile App Usage Patterns." <em>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval. 2020.</em></p>
+
+        <p>Rawassizadeh, R., Tomitsch, M., Wac, K., & Tjoa, A. M. (2013). UbiqLog: a generic mobile phone-based life-log framework. <em>Personal and ubiquitous computing, 17(4), 621-637.</em></p>
+
+        <p>Rawassizadeh, R., Momeni, E., Dobbins, C., Mirza-Babaei, P., & Rahnamoun, R. (2015). Lesson Learned from Collecting Quantified Self Information via Mobile and Wearable Devices. <em>Journal of Sensor and Actuator Networks, 4(4), 315-335.</em></p>
+
+
+        <h3>Download</h3>
+       
+        <a href ="data.html">Data Folder</a>
+        
+      
+        
+        
+        <h3>Contact:</h3>
+        yuan.tian@nottingham.ac.uk
+        
+        
+            
+                    
+                
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Task Annotation</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+        div.form-control {
+         display: inline;
+                 }
+         </style>
+    </head>
+    <body>   
+        
+    
+     <h3>Data Download:</h3>
+        
+     <a href="download_files/App_Info.csv" download>mobile_tasks.zip</a>  
+        
+     <h3>Data Information</h3>
+     <ul>
+         <li><b>App_Info.csv</b>: Including all the information of apps.</li>
+         <em>appid</em>: unique app ID;
+         <br><em>title</em>: app name on Google Play;
+         <br><em>genre</em>: app category on Google Play;
+         <br><em>summary</em>: brief summary of app on Google Play;
+         <br><em>description</em>: text description of app on Google Play;
+         <br><em>icon</em>: image link of app icon;
+         <br><em>headerimage</em>: image link of app header;
+         <br><em>price</em>: app price on Google Play;
+         <br><em>score</em>: score of app on Google Play;
+         <br><em>size</em>: size of app;
+         <br><em>url</em>: url could direct to the app on Google Play.
+        
+         <li><b>Log_Info.csv</b></li>
+         <em>Time</em>: timestamp of app usage;
+         <br><em>App_id</em>: unique app ID, which could be mapped to App_Info.csv;
+         <br><em>User_id</em>: unique ID of user, which could be mapped to User_List.csv;
+         <br><em>Task_ID</em>: annotated Task ID. Logs with same Task ID belonged to the same Task.
+        
+         <li><b>User_List.csv</b></li>
+         <em>User_Id: unique ID of all users included in our data.</em>
+         <br><em>Gender: gender info of each user.</em>
+         
+</ul>
+        
+    
+    </body>
+</html>

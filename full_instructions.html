@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Task Annotation</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+        div.form-control {
+         display: inline;
+                 }
+         </style>
+    </head>
+
+    <body>   
+        
+        <!--
+            THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
+        -->
+        <h1 style="color:rgb(40,148,186);">Full Instructions on Task Annotation</h1>
+        <h1> What is a task?</h1>
+            <p>A mobile task can be thought as <b>a group of apps usage </b> to accomplish a single discrete task. </p>
+            For examples:
+            
+            <h3>Task 1:  Wake up clock -- Use clock app for twice at 7:00 am and 7:05 am </h3>
+            <li>A user may set two clocks at 7:00 and 7:05 to make sure he/she can get up on time.
+            <p> <b>Reason: </b>they all work for the the same aim -- wake up. </p>
+            <h3>Task 2:  Browse/search the same information -- Use chrome app multiple times with very short intervals, i.e. 20 seconds </h3>
+            <li>A user may access the chrome multiple times to browse or search for the the same or related inforamtion within chrome.
+            <p> <b>Reason: </b>they all work for the the same aim -- browse the similar or related inforamtion. </p>
+            
+            <h3>Task 3:  Writing Email -- Google/Calendar  +  Gmail </h3>
+            <li> A user may Google some info/check date when replying/sending an email via Gmail app. In this task, the interval between access to Google/Calendar and Gmail app may be very short. 
+            <p> <b>Reason: </b>they all work for the the same aim -- writing the same email. </p>
+            <h3>Task 4: Booking the restaurant to have dinner with friends -- Whatsapp + Yelp + GoogleMap </h3>
+            <li> Whatsapp is used to chat with a friend for talking about the plan to have dinner together;
+            <li> Yelp is used to look for the proper restaurant in the session;
+            <li> GoogleMap is accessed for checking the navigation before he/she went to the restaurant (two hours after their chat). 
+            <p> <b>Reason: </b> The usage of these apps all have the same criteria for "success" -- complete the task of having dinner with friends. </p>
+            <h1> What is not a task?</h1>
+            <li> If a discrete task could not be inferred from the usage of multiple apps, then these apps could not be labeled as a task. 
+            For example:
+            <h3>Not a Task: Weather + Music Player</h3>
+            <li>A user accesses the Weather app and then the Music player app sequentially and within a very short interval. </li>
+            <p><b>Reason:</b>There is no potential relationship between these two apps and no higher-level task could be inferred from these usages, even they are used sequentially in a short time. </p>
+          
+            <h1>Annotation Guidelines:</h1>
+            <p>1. Human annotators could group together app usage that they claimed to be task-related within considering the time intervals between app usage and according to their understanding of users' needs.
+            .</p>
+            <p>For example:  </p>
+            <li>If a user accessed the clock app at 7:00 a.m. and then reaccessed the clock app 1 minute later, we could regard the want to set the clock for the same goal which could be labelled as one task. 
+            <li>If a user accessed the clock app at 7:00 a.m. and then accessed the clock app 2 hours later, we may not regard them as for the same task.</p>
+            <p>2.The annotators are encouraged to inspect any external information to help them infer the relations between different app usage.  Some of the app information has been provided, including app title, app category, app summary/description, icon, header image, and Google Play URLs, etc.  Any information could be used to aid them in their judgement.</p>
+            <li> The App Info Link after each app usage log could direct you to the app information page in Google Play.
+            <p>3. Each unique task will be given an ID number and a short description (optional) reflecting the user's objective. A guideline for app usage belong to the same task is that they have the same criteria for "success", in terms of satisfying the user's need.</p>
+            For example:
+
+       
+                <div><input id="Log_1" name="Time_1" type="checkbox" /> <img style="width: 40px; height: 42px;" src="https://lh3.googleusercontent.com/qTG9HMCp-s_aubJGeQWkR6M_myn-aXDJnraWn9oePcY1dGbYqXibaeLQBAeMdmxSBus=s180-rw"/>01/09/2014 09:25:03 Thursday <a href="https://play.google.com/store/apps/details?id=com.google.android.gm" target="_blank" rel="noopener">Gmail</a></div>
+
+<div class="form-control">Task_ID <select id="${Log_Text_1}" style="height: 27px; width: 70px; font-size: 14px;" name="${Log_Text_1}" required="">
+<option value="${select_default_1}">None</option>
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select></div>
+                
+                
+                
+<div class="form-control"><input class="form-control" style="height: 25px; width: 300px; font-size: 14px;" name="${Log_Text_1}_description" type="text" placeholder="Task Description" /></div>
+<hr />
+                
+                
+                
+<div><input id="Log_1" name="Time_1" type="checkbox" /> <img style="width: 40px; height: 42px;" src="https://lh3.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw=s180-rw" />01/09/2014 09:27:43 Thursday<a href="https://play.google.com/store/apps/details?id=com.google.android.calendar" target="_blank" rel="noopener"> Calendar </a></div>
+<div class="form-control">Task_ID <select id="${Log_Text_1}" style="height: 27px; width: 70px; font-size: 14px;" name="${Log_Text_1}" required="">
+<option value="${select_default_1}">None</option>
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select></div>
+
+<div class="form-control"><input class="form-control" style="height: 25px; width: 300px; font-size: 14px;" name="${Log_Text_1}_description" type="text" placeholder="Task Description" /></div>
+<hr/>
+                
+                
+
+                
+                
+<div><input id="Log_1" name="Time_1" type="checkbox" /> <img style="width: 40px; height: 42px;" src="https://lh3.googleusercontent.com/qTG9HMCp-s_aubJGeQWkR6M_myn-aXDJnraWn9oePcY1dGbYqXibaeLQBAeMdmxSBus=s180-rw"/>01/09/2014 09:29:03 Thursday <a href="https://play.google.com/store/apps/details?id=com.google.android.gm" target="_blank" rel="noopener">Gmail</a></div>
+
+<div class="form-control">Task_ID <select id="${Log_Text_1}" style="height: 27px; width: 70px; font-size: 14px;" name="${Log_Text_1}" required="">
+<option value="${select_default_1}">None</option>
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select></div>
+            
+
+<div class="form-control"><input class="form-control" style="height: 25px; width: 300px; font-size: 14px;" name="${Log_Text_1}_description" type="text" placeholder="Task Description" /></div>
+<hr/>
+                
+                
+                        
+<div><input id="Log_1" name="Time_1" type="checkbox" /> <img style="width: 40px; height: 42px;" src="https://lh3.googleusercontent.com/-Udh2Qv4FyhP2uLfvNy27jzzXrrIfnDEi9kUqzhy8OQgGUcWXXud6nlg8UywECiRmME=s180-rw"/>01/09/2014 11:27:18 Thursday <a href="https://play.google.com/store/apps/details?id=com.skype.raider" target="_blank" rel="noopener"> Skype - free IM & video calls </a></div>
+
+<div class="form-control">Task_ID <select id="${Log_Text_1}" style="height: 27px; width: 70px; font-size: 14px;" name="${Log_Text_1}" required="">
+<option value="${select_default_1}">None</option>
+<option value="1">1</option>
+<option value="2" selected>2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+</select></div>        
+                
+<div class="form-control"><input class="form-control" style="height: 25px; width: 300px; font-size: 14px;" name="${Log_Text_1}_description" type="text" placeholder="Task Description" /></div>
+<hr/>
+                
+                
+<div align="right"><button type="submit">Submit</button></div>
+               
+
+<p>In this example, the three usage of Gmail and Calendar at 09:25, 09:27, 09:29 are labeled as the same task (Writing Email), then you just need to give these three app logs Task ID 1 and a short description of this task when the first time you give the Task ID.</p>
+
+<p>Task ID is incremental.</p>
+                
+
+</body>
+</html>
